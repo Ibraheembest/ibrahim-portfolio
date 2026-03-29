@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "MCSA & System Admin",
+        "status": "earned",
+        "type": "self-study"
+    },
+    {
+        "id": 2,
+        "name": "CCNA",
+        "status": "earned",
+        "type": "self-study"
+    },
+    {
+        "id": 3,
+        "name": "Google Technical Support Professional Certificate",
+        "status": "earned",
+        "type": "certified"
+    },
+    {
+        "id": 4,
+        "name": "FortiGate Firewall",
+        "status": "earned",
+        "type": "training"
+    },
+    {
+        "id": 5,
+        "name": "Sophos Firewall (Network Security)",
+        "status": "earned",
+        "type": "certified"
+    },
+    {
+        "id": 6,
+        "name": "Linux Admin Level 1 & 2",
+        "status": "earned",
+        "type": "training"
+    },
+    {
+        "id": 7,
+        "name": "Red Hat Linux Admin 1 (RH124)",
+        "status": "earned",
+        "type": "training"
+    },
+    {
+        "id": 8,
+        "name": "Red Hat Admin 2 (RH134)",
+        "status": "earned",
+        "type": "training"
+    },
+    {
+        "id": 9,
+        "name": "Azure Fundamentals (AZ-900)",
+        "status": "earned",
+        "type": "certified"
+    },
+    {
+        "id": 10,
+        "name": "Network Admin - Configuration Network",
+        "status": "earned",
+        "type": "training"
+    },
+    {
+        "id": 11,
+        "name": "Odoo ERP Workflow/Module Management",
+        "status": "studying",
+        "type": "learning"
+    },
+    {
+        "id": 12,
+        "name": "SAP ERP System",
+        "status": "studying",
+        "type": "learning"
+    },
+    {
+        "id": 13,
+        "name": "Certificate of Experience from the Embassy of the Republic of Yemen",
+        "status": "studying",
+        "type": "recommendation"
+    },
+    {
+        "id": 14,
+        "name": "Recommendation Letter from the Embassy of the Republic of Yemen",
+        "status": "studying",
+        "type": "recommendation"
+    }
+]

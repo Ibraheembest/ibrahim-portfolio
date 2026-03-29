@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Mohamed | IT System Administrator</title>
+  <meta name="description" content="Portfolio of Ibrahim Mohamed, IT Support & System Administrator." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__brand" id="nav-brand">Ibrahim Mohamed</a>
+
+      <div style="display:flex; align-items:center;">
+        <ul class="nav__menu">
+          <li><a href="#profile" class="nav__link active">Profile</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#certifications" class="nav__link">Certificates</a></li>
+          <li><a href="#contact" class="nav__link nav__cta">Get In Touch</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── PROFILE (Hero + Contact Sidebar) ── -->
+  <section id="profile" class="container">
+    <div class="profile-wrap" id="profile-wrap">
+      <!-- Sidebar -->
+      <aside class="profile-sidebar">
+        <h2 class="sidebar-title">Contact & Status</h2>
+        <ul class="contact-list" id="contact-list">
+          <!-- Rendered via JS -->
+        </ul>
+        <img src="" alt="Profile Photo" id="profile-photo" class="profile-photo" onerror="this.style.display='none'" />
+      </aside>
+
+      <!-- Main Bio -->
+      <main class="profile-main">
+        <h1 id="profile-title">IT Professional</h1>
+        <p id="profile-bio"></p>
+      </main>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="container">
+    <div class="section-header">
+      <span class="section-icon">💼</span>
+      <h2 class="section-title">Professional Experience</h2>
+    </div>
+    <div class="experience-list" id="experience-list">
+      <!-- Rendered via JS -->
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="container">
+    <div class="section-header">
+      <span class="section-icon">🚀</span>
+      <h2 class="section-title">Key Projects</h2>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Rendered via JS -->
+    </div>
+  </section>
+
+  <!-- ── EDUCATION & AWARDS ── -->
+  <section id="education" class="container">
+    <div class="section-header">
+      <span class="section-icon">🎓</span>
+      <h2 class="section-title">Education & Certificates</h2>
+    </div>
+    <div class="edu-grid">
+      <!-- Academic -->
+      <div>
+        <h3 class="edu-subsection-title">🏛️ Academic Background</h3>
+        <div id="academic-list"></div>
+      </div>
+      <!-- Awards -->
+      <div>
+        <h3 class="edu-subsection-title">🏅 Awards & Recognition</h3>
+        <div id="awards-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications" class="container">
+    <div class="section-header">
+      <span class="section-icon">🎖️</span>
+      <h2 class="section-title">Key Certifications</h2>
+    </div>
+    <div class="cert-grid" id="cert-grid">
+      <!-- Rendered via JS -->
+    </div>
+
+    <div class="labyrinth-msg">
+      ⚠️ How will I ever get out of this labyrinth 😈?
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>© 2026 Ibrahim Mohamed - IT Specialist. All rights reserved. | <a href="admin.html"
+          style="color:var(--text-light);text-decoration:underline">Admin Panel</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

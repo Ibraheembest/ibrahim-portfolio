@@ -1,0 +1,17 @@
+{
+    "academic": [
+        {
+            "id": 1,
+            "degree": "Bachelor of Information Technology",
+            "period": "09/2020 - 06/2024",
+            "university": "Matrouh University",
+            "location": "Marsa Matrouh, Egypt",
+            "note": "Military Status: Exemption"
+        }
+    ],
+    "awards": [
+        "Excellence in Networking Projects - Matrouh University, 2023/2024",
+        "Leadership Development Institute in Helwan",
+        "Secretary of the Supreme Cultural Committee (2022/2023 + 2023/2024)"
+    ]
+}

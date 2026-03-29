@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "role": "IT Specialist",
+        "company": "Tech Corp",
+        "location": "Alexandria, Egypt",
+        "period": "01/2026 - Present",
+        "bullets": [
+            "Provided L1/L2 technical support for end users, resolving hardware, software, and network issues.",
+            "Managed and supported Windows systems, user accounts, and access permissions.",
+            "Supported Microsoft 365 services including Outlook, Teams, OneDrive, and SharePoint.",
+            "Troubleshot LAN/WAN, Wi-Fi, printers, scanners, and POS systems.",
+            "Maintained IT assets inventory and documented technical procedures."
+        ]
+    },
+    {
+        "id": 2,
+        "role": "System Administrator",
+        "company": "Global Solutions Ltd.",
+        "location": "Cairo, Egypt",
+        "period": "07/2024 - 11/2025",
+        "bullets": [
+            "Administered and maintained Active Directory, DNS/DHCP, Group Policies, and Ticketing System.",
+            "Configured and managed enterprise firewalls (Sophos, FortiGate) and VPN connections.",
+            "Implemented automated backup solutions reducing manual overhead by 80%.",
+            "Monitored server health and network uptime using Zabbix."
+        ]
+    }
+]

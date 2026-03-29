@@ -1,0 +1,14 @@
+{
+    "name": "Ibrahim Mohamed",
+    "title": "IT Support & System Administrator | Network & Cloud Specialist",
+    "bio": "Motivated and detail-oriented IT Specialist with hands-on experience in technical support, system administration, and network operations across diverse environments. Skilled in Microsoft 365, Active Directory, DNS/DHCP, Windows Server administration, firewalls (Sophos, FortiGate), and Cisco networking, with practical exposure to Linux systems and cloud platforms (Azure).\n\nA quick learner with strong problem-solving skills, passionate about technology, and eager to take on new challenges. Open to relocation or international opportunities, with strong adaptability to different work cultures. Fluent in Arabic and English, with excellent communication skills.",
+    "photo": "assets/img/profile.jpg",
+    "contact": {
+        "email": "ibrahim@example.com",
+        "location": "Egypt, Alexandria",
+        "currentRole": "IT Specialist",
+        "linkedin": "https://linkedin.com/in/ibrahim-mohamed",
+        "github": "https://github.com/ibrahim-mohamed",
+        "whatsapp": "+20 100 000 0000"
+    }
+}
