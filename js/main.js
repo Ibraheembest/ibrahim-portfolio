@@ -52,10 +52,12 @@ function buildProfile(data) {
 /* ── Render: Experience ─────────────────────────────────── */
 function buildExperience(data) {
   const container = $('experience-list');
-  container.innerHTML = data.map(job => `
-    <div class="job-card">
+  container.innerHTML = data.map((job, index) => {
+    const delay = `stagger-${(index % 4) + 1}`;
+    return `
+    <div class="job-card fade-up ${delay}">
       <div class="job-header">
-        <h3 class="job-title">${job.role} | ${job.company.split('|')[0] || job.company}</h3>
+        <h3 class="job-title">${job.role}</h3>
         <span class="job-period">${job.period} | ${job.location}</span>
       </div>
       <div class="job-company">${job.company}</div>
@@ -63,7 +65,7 @@ function buildExperience(data) {
         ${job.bullets.map(b => `<li>${b}</li>`).join('')}
       </ul>
     </div>
-  `).join('');
+  `}).join('');
 }
 
 /* ── Render: Projects (Using milestones.json format) ────── */
@@ -72,15 +74,19 @@ function buildProjects(data) {
   // Sort by date desc
   const sorted = [...data].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-  container.innerHTML = sorted.map(p => {
-    // Adapter for old milestones format to new CV format
-    const linkObj = p.link ? `<a href="${p.link}" target="_blank" class="btn btn--primary" style="align-self:flex-start;font-size:0.8rem">${p.linkLabel || 'View Details'}</a>`
-      : `<button class="btn btn--primary" style="align-self:flex-start;font-size:0.8rem">View Details</button>`;
+  container.innerHTML = sorted.map((p, index) => {
+    const delay = `stagger-${(index % 4) + 1}`;
+    const linkObj = p.link ? `<a href="${p.link}" target="_blank" class="btn btn--primary" style="align-self:flex-start;font-size:0.85rem">${p.linkLabel || 'View Details'}</a>`
+      : `<button class="btn btn--outline" style="align-self:flex-start;font-size:0.85rem">View Details</button>`;
+
+    const tagsObj = p.tags && p.tags.length ? `<div class="project-tags">${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>` : '';
 
     return `
-    <div class="project-card">
+    <div class="project-card fade-up ${delay}">
+      ${p.category ? `<div class="project-category">${p.category}</div>` : ''}
       <h3 class="project-title">${p.title}</h3>
       <p class="project-desc">${p.description}</p>
+      ${tagsObj}
       ${linkObj}
     </div>
   `}).join('');
@@ -91,8 +97,10 @@ function buildEducation(data) {
   const acadContainer = $('academic-list');
   const awdContainer = $('awards-list');
 
-  acadContainer.innerHTML = data.academic.map(ed => `
-    <div class="edu-card">
+  acadContainer.innerHTML = data.academic.map((ed, index) => {
+    const delay = `stagger-${(index % 4) + 1}`;
+    return `
+    <div class="edu-card fade-up ${delay}">
       <div class="edu-title">
         <span>${ed.degree || ''}</span>
         <span class="edu-period">${ed.year || ed.period || ''}</span>
@@ -101,17 +109,18 @@ function buildEducation(data) {
       ${ed.major ? `<div class="edu-note">Major: ${ed.major}</div>` : ''}
       ${ed.note ? `<div class="edu-note">${ed.note}</div>` : ''}
     </div>
-  `).join('');
+  `}).join('');
 
-  awdContainer.innerHTML = data.awards.map(awd => {
+  awdContainer.innerHTML = data.awards.map((awd, index) => {
+    const delay = `stagger-${(index % 4) + 1}`;
     if (typeof awd === 'string') {
-      return `<div class="award-card">${awd}</div>`;
+      return `<div class="award-card fade-up ${delay}">${awd}</div>`;
     }
     return `
-    <div class="award-card" style="display:flex; flex-direction:column; gap:0.5rem; text-align:left;">
-      <strong style="font-size:1.1rem">${awd.title}</strong>
-      <span style="font-size:0.85rem; color:var(--text-muted); font-weight:bold">${awd.type}</span>
-      <p style="margin:0; font-size:0.95rem; line-height:1.4">${awd.description}</p>
+    <div class="award-card fade-up ${delay}" style="display:flex; flex-direction:column; gap:0.5rem; text-align:left;">
+      <strong style="font-size:1.1rem; color:var(--primary)">${awd.title}</strong>
+      <span style="font-size:0.85rem; color:var(--text-muted); font-weight:bold; text-transform:uppercase; letter-spacing:0.5px">${awd.type}</span>
+      <p style="margin:0; font-size:0.95rem; line-height:1.6">${awd.description}</p>
     </div>
   `}).join('');
 }
@@ -128,13 +137,14 @@ function buildCertifications(data) {
     'recommendation': '⭐'
   };
 
-  container.innerHTML = data.map(cert => {
+  container.innerHTML = data.map((cert, index) => {
+    const delay = `stagger-${(index % 4) + 1}`;
     const isStudying = cert.status === 'studying' ? 'studying' : '';
     const icon = icons[cert.type] || '🔖';
     const postFix = cert.status === 'studying' ? ' (Studying)' : '';
 
     return `
-    <div class="cert-card ${isStudying}">
+    <div class="cert-card fade-up ${delay} ${isStudying}">
       <span class="cert-icon">${icon}</span>
       <span>${cert.name}${postFix}</span>
     </div>
@@ -172,7 +182,7 @@ function initScrollSpy() {
     let current = '';
     sections.forEach(sec => {
       const top = sec.offsetTop;
-      if (scrollY >= top - 100) {
+      if (scrollY >= top - 150) {
         current = sec.getAttribute('id');
       }
     });
@@ -184,6 +194,20 @@ function initScrollSpy() {
       }
     });
   });
+}
+
+/* ── Scroll Animations ──────────────────────────────────── */
+function initAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // observer.unobserve(entry.target); // keep it dynamic or uncomment to animate only once
+      }
+    });
+  }, { threshold: 0.05, rootMargin: "0px 0px -50px 0px" });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 }
 
 /* ── Main Loader ────────────────────────────────────────── */
@@ -219,5 +243,13 @@ async function loadAllData() {
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initScrollSpy();
-  loadAllData();
+  loadAllData().then(() => {
+    // Add fade up to static elements too
+    document.querySelectorAll('.profile-wrap, .section-header').forEach((el, index) => {
+      el.classList.add('fade-up');
+      if(index > 0) el.classList.add('stagger-1');
+    });
+    // Init animations after DOM is fully built by API
+    setTimeout(initAnimations, 100);
+  });
 });
