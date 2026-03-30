@@ -1,29 +1,28 @@
 [
     {
-        "id": 1,
-        "role": "IT Specialist",
-        "company": "Tech Corp",
-        "location": "Alexandria, Egypt",
-        "period": "01/2026 - Present",
+      "id": 1,
+        "role": "Information Systems Coordinator",
+        "company": "Porto Matrouh",
+        "location": "Marsa Matrouh",
+        "period": "Summers of 2024 - 2025",
         "bullets": [
-            "Provided L1/L2 technical support for end users, resolving hardware, software, and network issues.",
-            "Managed and supported Windows systems, user accounts, and access permissions.",
-            "Supported Microsoft 365 services including Outlook, Teams, OneDrive, and SharePoint.",
-            "Troubleshot LAN/WAN, Wi-Fi, printers, scanners, and POS systems.",
-            "Maintained IT assets inventory and documented technical procedures."
+            "Executed full-scale CCTV system deployment across the resort, including physical mounting and installation of surveillance cameras.",
+            "Managed end-to-end cabling for the surveillance network, ensuring proper routing and termination at distribution switches between residential units.",
+            "Collaborated with the IT Lead on integrating security systems and performing comprehensive connectivity testing.",
+            "Handled physical network infrastructure maintenance, including cabling and network troubleshooting between buildings.",
+            "Provided on-site Help Desk support for hardware and software issues, ensuring reliable connectivity for peripherals."
         ]
-    },
-    {
-        "id": 2,
-        "role": "System Administrator",
-        "company": "Global Solutions Ltd.",
-        "location": "Cairo, Egypt",
-        "period": "07/2024 - 11/2025",
-        "bullets": [
-            "Administered and maintained Active Directory, DNS/DHCP, Group Policies, and Ticketing System.",
-            "Configured and managed enterprise firewalls (Sophos, FortiGate) and VPN connections.",
-            "Implemented automated backup solutions reducing manual overhead by 80%.",
-            "Monitored server health and network uptime using Zabbix."
-        ]
-    }
+    },{
+    "id": 2,
+    "role": "Technical Documentation & Digitization Specialist",
+    "company": "Freelance",
+    "location": "Remote",
+    "period": "2016 - Present",
+    "bullets": [
+        "Specialized in the digitization of complex archives, converting scanned documents and historical manuscripts into high-fidelity editable formats.",
+        "Expertise in technical and academic documentation, including the formatting of graduation projects and official reports using professional standards.",
+        "Advanced linguistic processing, providing full diacritics and precise proofreading for sensitive historical and religious texts.",
+        "Maintained a long-term track record (10 years) of high-speed data entry and 100% accuracy under strict delivery deadlines."
+    ]
+}
 ]

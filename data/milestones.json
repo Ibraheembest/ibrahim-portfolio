@@ -1,47 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Built Home Lab with Proxmox VE",
-    "date": "2024-06",
+    "title": "CompuNerd Home Lab Setup",
+    "date": "2026-03",
     "category": "Infrastructure",
-    "description": "Designed and deployed a full home lab environment using Proxmox VE. Configured multiple VMs including Windows Server 2022, Ubuntu Server, and pfSense firewall. Implemented VLAN segmentation and network monitoring.",
-    "image": "assets/img/proxmox-lab.jpg",
-    "tags": ["Proxmox", "Virtualization", "Networking", "pfSense"]
+    "description": "Deployed a Windows Server 2022 environment on Hyper-V. Configured Active Directory, Static IP routing, and virtual CPU/RAM optimization (8GB RAM / 4 vCPUs).",
+    "tags": ["Windows Server", "Hyper-V", "Active Directory"]
   },
   {
     "id": 2,
-    "title": "Active Directory Domain Setup",
-    "date": "2024-08",
-    "category": "Windows Server",
-    "description": "Deployed a Windows Server 2022 Active Directory domain from scratch. Configured GPOs, OUs, user/group management, and DNS/DHCP services. Implemented security baselines following CIS benchmarks.",
-    "image": "assets/img/active-directory.jpg",
-    "tags": ["Active Directory", "Windows Server", "GPO", "DNS"]
-  },
-  {
-    "id": 3,
-    "title": "Automated Backup System with PowerShell",
-    "date": "2024-10",
-    "category": "Automation",
-    "description": "Developed a PowerShell script suite for automated daily backups, log rotation, and email alerting. Reduced manual admin overhead by 80% and achieved 99.9% backup success rate.",
-    "image": "assets/img/powershell-backup.jpg",
-    "tags": ["PowerShell", "Automation", "Backup", "Scripting"]
-  },
-  {
-    "id": 4,
-    "title": "Linux Server Hardening & SSH Configuration",
-    "date": "2025-01",
-    "category": "Linux / Security",
-    "description": "Hardened Ubuntu 22.04 LTS servers following NIST guidelines. Configured fail2ban, UFW firewall, SSH key-based authentication, and AIDE intrusion detection. Performed vulnerability scans with Lynis.",
-    "image": "assets/img/linux-hardening.jpg",
-    "tags": ["Linux", "Security", "SSH", "Hardening", "Bash"]
-  },
-  {
-    "id": 5,
-    "title": "Network Monitoring with Zabbix",
-    "date": "2025-03",
-    "category": "Monitoring",
-    "description": "Deployed Zabbix 6.4 on Ubuntu Server to monitor 20+ network devices and servers. Created custom dashboards, alert thresholds, and escalation policies. Integrated with Telegram for real-time notifications.",
-    "image": "assets/img/zabbix-monitoring.jpg",
-    "tags": ["Zabbix", "Monitoring", "SNMP", "Alerting"]
+    "title": "Hessni (حصني) Mobile Application",
+    "date": "2026-02",
+    "category": "App Development",
+    "description": "Developed an interactive Islamic educational app using AI-driven development tools to enhance user experience for children.",
+    "tags": ["AI-Assisted Dev", "Flutter", "UI/UX"]
   }
 ]

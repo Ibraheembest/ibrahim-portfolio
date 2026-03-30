@@ -1,14 +1,14 @@
 {
-    "name": "Ibrahim Mohamed",
-    "title": "IT Support & System Administrator | Network & Cloud Specialist",
-    "bio": "Motivated and detail-oriented IT Specialist with hands-on experience in technical support, system administration, and network operations across diverse environments. Skilled in Microsoft 365, Active Directory, DNS/DHCP, Windows Server administration, firewalls (Sophos, FortiGate), and Cisco networking, with practical exposure to Linux systems and cloud platforms (Azure).\n\nA quick learner with strong problem-solving skills, passionate about technology, and eager to take on new challenges. Open to relocation or international opportunities, with strong adaptability to different work cultures. Fluent in Arabic and English, with excellent communication skills.",
-    "photo": "assets/img/profile.jpg",
+    "name": "Ibrahim Mohamed Hassan",
+    "title": "IT Support Engineer | Aspiring System Administrator",
+    "bio": "A Computer Science & AI graduate with hands-on experience in IT infrastructure and hardware troubleshooting. Currently specializing in Windows Server 2022 and Active Directory management through building advanced home lab environments.",
+    "photo": "assets/img/profile.png",
     "contact": {
-        "email": "ibrahim@example.com",
-        "location": "Egypt, Alexandria",
-        "currentRole": "IT Specialist",
-        "linkedin": "https://linkedin.com/in/ibrahim-mohamed",
-        "github": "https://github.com/ibrahim-mohamed",
-        "whatsapp": "+20 100 000 0000"
+        "email": "compuman44@gmail.com",
+        "location": "Sohag, Egypt",
+        "currentRole": "Junior IT Specialist",
+        "linkedin": "www.linkedin.com/in/ibrahim-hassan-00b9783ba",
+        "github": "https://github.com/Ibraheembest",
+        "whatsapp": "+201284045044"
     }
 }

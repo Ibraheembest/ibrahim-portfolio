@@ -1,17 +1,17 @@
 {
     "academic": [
         {
-            "id": 1,
-            "degree": "Bachelor of Information Technology",
-            "period": "09/2020 - 06/2024",
+            "degree": "Bachelor of Computer Science & AI",
+            "major": "Computer Science (CS)",
             "university": "Matrouh University",
-            "location": "Marsa Matrouh, Egypt",
-            "note": "Military Status: Exemption"
+            "year": "2025"
         }
     ],
     "awards": [
-        "Excellence in Networking Projects - Matrouh University, 2023/2024",
-        "Leadership Development Institute in Helwan",
-        "Secretary of the Supreme Cultural Committee (2022/2023 + 2023/2024)"
+        {
+            "title": "Intelligent Tutoring System (ITS) for Programming",
+            "type": "Graduation Project",
+            "description": "Developed a robust ITS to assist students in learning programming concepts through personalized feedback."
+        }
     ]
 }

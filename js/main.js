@@ -94,17 +94,26 @@ function buildEducation(data) {
   acadContainer.innerHTML = data.academic.map(ed => `
     <div class="edu-card">
       <div class="edu-title">
-        <span>${ed.degree}</span>
-        <span class="edu-period">${ed.period}</span>
+        <span>${ed.degree || ''}</span>
+        <span class="edu-period">${ed.year || ed.period || ''}</span>
       </div>
-      <div class="edu-uni">${ed.university} | ${ed.location}</div>
+      <div class="edu-uni">${ed.university || ''} ${ed.location ? '| ' + ed.location : ''}</div>
+      ${ed.major ? `<div class="edu-note">Major: ${ed.major}</div>` : ''}
       ${ed.note ? `<div class="edu-note">${ed.note}</div>` : ''}
     </div>
   `).join('');
 
-  awdContainer.innerHTML = data.awards.map(awd => `
-    <div class="award-card">${awd}</div>
-  `).join('');
+  awdContainer.innerHTML = data.awards.map(awd => {
+    if (typeof awd === 'string') {
+      return `<div class="award-card">${awd}</div>`;
+    }
+    return `
+    <div class="award-card" style="display:flex; flex-direction:column; gap:0.5rem; text-align:left;">
+      <strong style="font-size:1.1rem">${awd.title}</strong>
+      <span style="font-size:0.85rem; color:var(--text-muted); font-weight:bold">${awd.type}</span>
+      <p style="margin:0; font-size:0.95rem; line-height:1.4">${awd.description}</p>
+    </div>
+  `}).join('');
 }
 
 /* ── Render: Certifications ─────────────────────────────── */
